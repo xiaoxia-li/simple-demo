@@ -1,0 +1,14 @@
+[
+  {
+    "id": "1",
+    "image": "./img/street.jpg",
+    "title": "Lorem ipsum dolor sit amet 1",
+    "description": "Lorem ipsum dolor sit amet"
+  },
+  {
+    "id": "2",
+    "image": "./img/street.jpg",
+    "title": "Lorem ipsum dolor sit amet 2",
+    "description": "Lorem ipsum dolor sit amet"
+  }
+]

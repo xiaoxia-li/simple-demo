@@ -1,0 +1,13 @@
+.footer {
+  position: relative;
+  z-index: 100;
+
+  $block: &;
+
+  &__wrapper {
+    background-color: map-get($palette, purple);
+    @include media-breakpoint-up(lg) {
+      background-color: map-get($palette, pink);
+    }
+  }
+}

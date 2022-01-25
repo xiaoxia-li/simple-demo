@@ -1,0 +1,108 @@
+body {
+  font-family: $font-family;
+  background-color: map-get($palette, offWhite);
+  overflow-x: hidden;
+  &.modal-open {
+    overflow: hidden;
+  }
+
+  .page-body {
+    width: 100%;
+    min-height: calc(100vh - 430px);
+    overflow: hidden;
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+}
+
+/* Global functions */
+@keyframes slidein {
+  0% {
+    left: 150px;
+    opacity: 0;
+  }
+  100% {
+    left: 290px;
+    opacity: 1;
+  }
+}
+@keyframes rootSlideinMobile {
+  0% {
+    left: -300px;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes rootSlidein {
+  0% {
+    left: -150px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes slideinMobile {
+  0% {
+    left: 0;
+    opacity: 0;
+  }
+  100% {
+    left: 100%;
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation: fadeIn 500ms ease forwards;
+}
+.fadeOut {
+  animation: fadeOut 500ms ease forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    display: block;
+  }
+  100% {
+    opacity: 1;
+    display: block;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    display: block;
+  }
+  99% {
+    opacity: 0;
+    display: block;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+/* Placeholder style */
+input[type='text'] {
+  &::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: map-get($palette, greyTwo);
+  }
+  &::-moz-placeholder {
+    /* Firefox 19+ */
+    color: map-get($palette, greyTwo);
+  }
+  &:-ms-input-placeholder {
+    /* IE 10+ */
+    color: map-get($palette, greyTwo);
+  }
+  &:-moz-placeholder {
+    /* Firefox 18- */
+    color: map-get($palette, greyThree);
+  }
+}
